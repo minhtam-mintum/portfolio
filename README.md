@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mintum — Portfolio
+
+Personal portfolio website for **Pham Minh Tam** (aka **Mintum**), a Frontend Developer with 4+ years of experience building scalable web applications in Fintech, E-commerce, and Enterprise sectors.
+
+**Live:** [mintum-portfolio.netlify.app](https://mintum-portfolio.netlify.app/)
+
+---
+
+## About
+
+Frontend Developer specializing in **React & Next.js**, with hands-on experience delivering production-grade apps across Banking, E-commerce, Healthcare, and Energy industries. Strong ownership mindset — capable of taking features from project setup to production deployment independently.
+
+---
+
+## Tech Stack
+
+| Category | Technologies |
+|---|---|
+| Languages | JavaScript, TypeScript |
+| Frameworks | React, Next.js |
+| Styling | TailwindCSS, MUI |
+| State & Data | Redux Toolkit, Redux Saga, Tanstack Query |
+| Other | Git, REST API, JWT Auth, SSR/SSG, Code Splitting, Lazy Loading, Agile/Scrum |
+
+---
+
+## Sections
+
+- **Hero** — Introduction with tech tags and CV download
+- **About** — Background, education, and experience summary
+- **Skills** — Full tech stack with categorized cards
+- **Projects** — Filterable project cards (Fintech, E-commerce, Enterprise)
+- **Experience** — Work history timeline
+- **Contact** — Contact form and social links
+
+---
+
+## Projects Featured
+
+| Project | Category | Period |
+|---|---|---|
+| IVBank Management System | Fintech | 10/2025 – 03/2026 |
+| Locstoc E-commerce Platform | E-commerce | 05/2024 – 10/2025 |
+| Enterprise Systems (EVN, Affina, Giọt Máu Vàng) | Enterprise | 05/2022 – 05/2024 |
+
+---
+
+## Built With
+
+- [Next.js 16](https://nextjs.org/) — App Router, SSR/SSG
+- [React 19](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [TailwindCSS v4](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/) — Animations
+- [Lucide React](https://lucide.dev/) — Icons
+
+---
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deployed on [Netlify](https://netlify.com). Push to `master` triggers a new build automatically.
