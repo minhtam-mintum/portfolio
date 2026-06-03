@@ -36,7 +36,7 @@ export default function Navbar() {
         <a href="#home" className="flex items-center gap-2">
           <Image src="/logo-mark.svg" alt="Mintum mark" width={32} height={32} />
           <div className="leading-tight">
-            <span className="font-bold text-sm text-(--text) block">Minh Tam</span>
+            <span className="font-bold text-sm text-(--text) block">Mintum</span>
             <span className="text-xs text-(--text-muted)">Frontend Developer</span>
           </div>
         </a>

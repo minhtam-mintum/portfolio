@@ -17,11 +17,11 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2">
           <Image src="/logo-mark.svg" alt="Mintum mark" width={28} height={28} />
-          <span className="text-sm font-semibold text-(--text)">Pham Minh Tam</span>
+          <span className="text-sm font-semibold text-(--text)">Mintum</span>
         </div>
 
         <p className="text-xs text-(--text-muted)">
-          © {new Date().getFullYear()} Pham Minh Tam. All rights reserved.
+          © {new Date().getFullYear()} Mintum (Pham Minh Tam). All rights reserved.
         </p>
 
         <div className="flex items-center gap-3">

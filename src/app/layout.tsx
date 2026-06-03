@@ -6,9 +6,9 @@ import { ThemeProvider } from "./providers";
 const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
 
 export const metadata: Metadata = {
-  title: "Pham Minh Tam — Frontend Developer",
+  title: "Mintum — Frontend Developer",
   description:
-    "Frontend Developer with 4 years of experience building scalable web applications using ReactJS, NextJS, and TypeScript.",
+    "Mintum (Pham Minh Tam) — Frontend Developer with 4 years of experience building scalable web applications using ReactJS, NextJS, and TypeScript.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
