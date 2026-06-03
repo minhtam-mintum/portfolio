@@ -15,7 +15,7 @@ function LinkedinIcon({ size = 16 }: { size?: number }) {
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
-  const [status, setStatus] = useState<"idle" | "sending" | "sent">("idle");
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -24,10 +24,20 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("sending");
-    await new Promise((r) => setTimeout(r, 1000));
-    setStatus("sent");
-    setForm({ name: "", email: "", message: "" });
-    setTimeout(() => setStatus("idle"), 4000);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error();
+      setStatus("sent");
+      setForm({ name: "", email: "", message: "" });
+      setTimeout(() => setStatus("idle"), 4000);
+    } catch {
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 4000);
+    }
   };
 
   return (
@@ -111,6 +121,8 @@ export default function Contact() {
                 "Sending..."
               ) : status === "sent" ? (
                 "Message sent!"
+              ) : status === "error" ? (
+                "Failed to send. Try again."
               ) : (
                 <>
                   Send Message <Send size={14} />
