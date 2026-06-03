@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { useTheme } from "@/app/providers";
 import { Menu, X, Moon, Sun } from "lucide-react";
 
@@ -33,9 +34,7 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded bg-(--accent) flex items-center justify-center">
-            <span className="text-xs font-bold text-white">MT</span>
-          </div>
+          <Image src="/logo-mark.svg" alt="Mintum mark" width={32} height={32} />
           <div className="leading-tight">
             <span className="font-bold text-sm text-(--text) block">Minh Tam</span>
             <span className="text-xs text-(--text-muted)">Frontend Developer</span>

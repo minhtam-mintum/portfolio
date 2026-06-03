@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Mail } from "lucide-react";
 
 function LinkedinIcon({ size = 14 }: { size?: number }) {
@@ -15,9 +16,7 @@ export default function Footer() {
     <footer className="py-10 px-6 border-t border-(--border)">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded bg-(--accent) flex items-center justify-center">
-            <span className="text-[10px] font-bold text-white">MT</span>
-          </div>
+          <Image src="/logo-mark.svg" alt="Mintum mark" width={28} height={28} />
           <span className="text-sm font-semibold text-(--text)">Pham Minh Tam</span>
         </div>
 
