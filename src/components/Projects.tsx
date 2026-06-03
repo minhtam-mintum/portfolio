@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { ExternalLink } from "lucide-react";
 
-type Category = "All" | "Enterprise" | "E-commerce" | "Fintech";
+type Category = "All" | "Enterprise" | "E-commerce" | "Fintech" | "Personal";
 
 const projects = [
   {
@@ -48,9 +48,39 @@ const projects = [
       "Maintained and scaled enterprise-grade apps",
     ],
   },
+  {
+    category: "Personal" as Category,
+    title: "Calendar Task Planner",
+    role: "Solo Developer",
+    period: "2025",
+    desc: "A personal productivity app for planning and tracking tasks on a calendar view, built as a side project to explore intuitive scheduling UX.",
+    tags: ["ReactJS", "TypeScript", "TailwindCSS"],
+    highlights: [
+      "Interactive calendar-based task management",
+      "Clean, minimal scheduling interface",
+      "Side project driven by personal productivity needs",
+    ],
+    link: "https://caplander.netlify.app/",
+    github: "https://github.com/minhtam-mintum/calendar-task-planner",
+  },
+  {
+    category: "Personal" as Category,
+    title: "Portfolio",
+    role: "Solo Developer",
+    period: "2026",
+    desc: "Personal portfolio site showcasing projects and skills, built with Next.js and TailwindCSS. The site you're looking at right now.",
+    tags: ["NextJS", "TypeScript", "TailwindCSS"],
+    highlights: [
+      "Dark/light theme with custom design tokens",
+      "Fully responsive across all screen sizes",
+      "Deployed on Netlify with CI/CD",
+    ],
+    link: "https://mintum-portfolio.netlify.app/",
+    github: "https://github.com/minhtam-mintum/portfolio",
+  },
 ];
 
-const categories: Category[] = ["All", "Fintech", "E-commerce", "Enterprise"];
+const categories: Category[] = ["All", "Fintech", "E-commerce", "Enterprise", "Personal"];
 
 export default function Projects() {
   const [active, setActive] = useState<Category>("All");
@@ -104,10 +134,20 @@ export default function Projects() {
                     {p.role} · {p.period}
                   </p>
                 </div>
-                <ExternalLink
-                  size={16}
-                  className="shrink-0 text-(--text-muted) group-hover:text-(--accent) transition-colors mt-1"
-                />
+                {"link" in p && p.link && (
+                  <a
+                    href={p.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    aria-label={`Visit ${p.title}`}
+                  >
+                    <ExternalLink
+                      size={16}
+                      className="shrink-0 text-(--text-muted) group-hover:text-(--accent) transition-colors mt-1"
+                    />
+                  </a>
+                )}
               </div>
 
               <p className="text-sm text-(--text-muted) leading-relaxed">{p.desc}</p>

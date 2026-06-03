@@ -65,7 +65,7 @@ export default function Skills() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-extrabold text-(--text) tracking-tight">
-            My <span className="text-(--accent)">tech</span> stack
+            My <span className="text-(--accent)">&#123;tech&#125;</span> stack
           </h2>
           <p className="mt-3 text-(--text-muted) text-base">
             Technologies I use to build great products.

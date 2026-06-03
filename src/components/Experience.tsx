@@ -14,7 +14,7 @@ export default function Experience() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-extrabold text-(--text) tracking-tight">
-            Work <span className="text-(--accent)">experience</span>
+            Work <span className="text-(--accent)">[experience]</span>
           </h2>
         </div>
 
