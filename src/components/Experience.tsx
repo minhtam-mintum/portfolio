@@ -1,11 +1,10 @@
 const highlights = [
-  "Improved performance ~30% via React rendering optimization",
-  "Implemented SSR/SSG with optimized data fetching and hydration strategies in Next.js",
-  "Built reusable and configurable component systems to support scalable UI architecture",
-  "Optimized complex UI rendering for large datasets, improving responsiveness",
-  "Implemented secure authentication using JWT with refresh token flow",
+  "Delivered scalable frontend applications for enterprise clients across Banking, E-commerce, Healthcare, and Energy sectors",
+  "Improved application performance by ~30% through React rendering optimization, code splitting, and lazy loading",
+  "Implemented secure JWT authentication with a refresh-token flow across multiple client projects",
   "Independently bootstrapped frontend projects from setup to production",
   "Collaborated with backend, QA, and PM teams in Agile/Scrum environment",
+  "Built reusable component libraries and design systems standardized across multiple projects",
 ];
 
 export default function Experience() {

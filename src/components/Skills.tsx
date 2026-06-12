@@ -57,7 +57,7 @@ const skills = [
   },
 ];
 
-const otherTags = ["Git", "REST API", "Agile/Scrum", "Kendo UI", "SSR / SSG", "Code Splitting", "Lazy Loading", "JWT Auth"];
+const otherTags = ["Git", "REST API", "Agile/Scrum", "SASS/SCSS", "Kendo UI", "Highcharts", "SheetJS (XLSX)", "Vite", "React Router", "Axios", "React Hook Form + Yup", "SSR / SEO", "Code Splitting", "Lazy Loading", "JWT Auth"];
 
 export default function Skills() {
   return (
