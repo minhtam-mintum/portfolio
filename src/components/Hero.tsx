@@ -3,7 +3,14 @@
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 
-const techTags = ['JavaScript', 'React', 'Next.js', 'TypeScript', 'TailwindCSS', 'Redux'];
+const techTags = [
+  'React',
+  'Next.js',
+  'TypeScript',
+  'TanStack Query',
+  'TailwindCSS',
+  'Redux',
+];
 
 export default function Hero() {
   const titleRef = useRef<HTMLHeadingElement>(null);
@@ -47,9 +54,9 @@ export default function Hero() {
         </h1>
 
         <p className='text-base sm:text-lg text-(--text-muted) max-w-xl mx-auto mb-10 leading-relaxed'>
-          Specializing in <span className='text-(--text) font-medium'>React & Next.js</span>, I
-          build scalable, performant web applications with clean architecture and great user
-          experience.
+          Frontend Developer with 4 years of experience building{' '}
+          <span className='text-(--text) font-medium'>React & Next.js</span> applications for
+          banking, e-commerce, healthcare, and energy teams.
         </p>
 
         <div className='flex flex-wrap items-center justify-center gap-4'>
@@ -59,8 +66,8 @@ export default function Hero() {
             See my work
           </a>
           <a
-            href='/Pham_Minh_Tam_CV.pdf'
-            download
+            href='/PhamMinhTam_Frontend.pdf'
+            download='PhamMinhTam_Frontend.pdf'
             className='px-7 py-3 rounded-full text-sm font-semibold text-(--text) border border-(--border) hover:border-(--accent) hover:text-(--accent) transition-all duration-200'>
             Download CV
           </a>

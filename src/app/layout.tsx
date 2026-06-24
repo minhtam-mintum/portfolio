@@ -8,7 +8,16 @@ const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
 export const metadata: Metadata = {
   title: "Mintum — Frontend Developer",
   description:
-    "Mintum (Pham Minh Tam) — Frontend Developer with 4 years of experience building scalable web applications using ReactJS, NextJS, and TypeScript.",
+    "Mintum (Pham Minh Tam) — Frontend Developer with 4 years of experience building ReactJS, NextJS, and TypeScript applications for banking, e-commerce, healthcare, and energy teams.",
+  keywords: [
+    "Pham Minh Tam",
+    "Mintum",
+    "Frontend Developer",
+    "ReactJS",
+    "NextJS",
+    "TypeScript",
+    "TanStack Query",
+  ],
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },

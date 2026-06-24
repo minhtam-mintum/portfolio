@@ -45,8 +45,8 @@ const skills = [
     icon: "TQ",
     iconBg: "#ef444422",
     iconColor: "#ef4444",
-    name: "Tanstack Query",
-    desc: "Efficient data fetching, caching and synchronization.",
+    name: "TanStack Query",
+    desc: "Server-state caching, request deduplication and synchronization.",
   },
   {
     icon: "MUI",
@@ -57,7 +57,7 @@ const skills = [
   },
 ];
 
-const otherTags = ["Git", "REST API", "Agile/Scrum", "SASS/SCSS", "Kendo UI", "Highcharts", "SheetJS (XLSX)", "Vite", "React Router", "Axios", "React Hook Form + Yup", "SSR / SEO", "Code Splitting", "Lazy Loading", "JWT Auth"];
+const otherTags = ["Git", "REST API", "Agile/Scrum", "SASS/SCSS", "Kendo UI", "Highcharts", "SheetJS (XLSX)", "Vite", "React Router", "Axios", "React Hook Form + Yup", "matrix-js-sdk", "RSA Encryption", "Design Systems", "SSR / SEO", "Code Splitting", "Lazy Loading", "JWT Auth"];
 
 export default function Skills() {
   return (
@@ -68,7 +68,7 @@ export default function Skills() {
             My <span className="text-(--accent)">&#123;tech&#125;</span> stack
           </h2>
           <p className="mt-3 text-(--text-muted) text-base">
-            Technologies I use to build great products.
+            Technologies I use for scalable frontend architecture and fast data-heavy products.
           </p>
         </div>
 
